@@ -261,6 +261,76 @@ main {
     }
 }
 
+@media (max-width: 40rem) {
+    body {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .theme-toggle {
+        top: 0.75rem;
+        right: 0.75rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .hero {
+        padding: 5rem 1.5rem 3rem;
+    }
+
+    .hero-content {
+        justify-items: stretch;
+    }
+
+    .hero-name {
+        font-size: 1.05rem;
+    }
+
+    #btn {
+        justify-content: center;
+    }
+
+    .section {
+        gap: 1rem;
+        padding: 3rem 0;
+    }
+
+    .text {
+        gap: 1.25rem;
+    }
+
+    .profile-image {
+        max-height: 22rem;
+        border-radius: 1.1rem;
+    }
+
+    .floater {
+        width: calc(var(--size) * 0.7);
+        height: calc(var(--size) * 0.7);
+    }
+
+    .floater:nth-child(n + 9) {
+        display: none;
+    }
+}
+
+@media (min-width: 90rem) {
+    body {
+        font-size: 1.1875rem;
+    }
+
+    main {
+        max-width: 84rem;
+    }
+}
+
+@media (max-height: 32rem) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 4rem clamp(1.5rem, 8vw, 7rem) 3rem;
+    }
+}
+
 @keyframes enter {
     from {
         opacity: 0;
